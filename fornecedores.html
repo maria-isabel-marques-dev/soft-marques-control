@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fornecedores | Soft Marques Control</title>
+    <link rel="stylesheet" href="principal.css">
+</head>
+<body>
+    <input type="checkbox" id="abrir-menu" class="menu-check">
+    <aside>
+       <div class="marca">
+        <span class="logo">SM</span>
+        <div class="textos">
+            <strong class="nome">Soft Marques</strong>
+            <small class="subnome">CONTROL</small>
+        </div>
+       </div>
+       <p class="titulo-menu">MENU PRINCIPAL</p>
+       <nav>
+            <ul>
+                <li><a href="principal.html">Visão geral</a></li>
+                <li><a href="software.html">Softwares</a></li>
+                <li><a href="licencas.html">Licenças</a></li>
+                <li><a href="equipamentos.html">Equipamentos</a></li>
+                <li><a class="ativo" href="fornecedores.html">Fornecedores</a></li>
+                <li><a href="compras.html">Compras e contratos</a></li>
+                <li><a href="relatorios.html">Relatórios</a></li>
+            </ul>
+       </nav>
+       <p class="titulo-menu">ADMINISTRAÇÃO</p>
+       <nav>
+            <ul>
+                <li><a href="usuarios.html">Usuários e permissões</a></li>
+                <li><a href="historico.html">Histórico de atividades</a></li>
+                <li><a href="configuracoes.html">Configurações</a></li>
+            </ul>
+       </nav>
+       <div class="ajuda">
+            <strong>Precisa de ajuda?</strong>
+            <p>Consulte orientações para organizar seus softwares.</p>
+       </div>
+    </aside>
+    <main>
+        <header class="topo">
+            <label for="abrir-menu" class="menu-botao">☰</label>
+            <input type="search" placeholder="Buscar fornecedores..." aria-label="Buscar fornecedores">
+            <div class="usuario">
+                <span class="avatar">AM</span>
+                <div><strong>Administrador</strong>
+                    <small>Gestor do sistema</small>
+                </div>
+            </div>
+        </header>
+        <section class="ola">
+            <h1>Fornecedores</h1>
+            <a class="botao" href="#">+ Adicionar fornecedor</a>
+        </section>
+        <section class="cartoes tres">
+            <article class="cartao">
+                <strong class="numero">8</strong>
+                <small class="nota">Fornecedores</small>
+            </article>
+            <article class="cartao">
+                <strong class="numero">6</strong>
+                <small class="nota">Com contratos Ativos</small>
+            </article>
+            <article class="cartao">
+                <strong class="numero">2</strong>
+                <small class="nota">Sem contratos ativos</small>
+            </article>
+        </section>
+        <section class="recentes painel">
+            <div class="extremos">
+             <h2>Fornecedores cadastrados</h2>
+                <div class="filtros">
+                  <a class="filtro ativo" href="#">Todos</a>
+                  <a class="filtro" href="#">Ativos</a>
+                  <a class="filtro" href="#">Arquivados</a>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>FORNECEDOR</th>
+                        <th>CNPJ</th>
+                        <th>CONTATO</th>
+                        <th>E-MAIL</th>
+                        <th>LICENÇAS VINCULADAS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Microsoft do Brasil</td>
+                        <td>00.000.000/0001-00</td>
+                        <td>(11) 0000-0000</td>
+                        <td>contato@empresa.com</td>
+                        <td>Microsoft 365</td>
+                    </tr>
+                    <tr>
+                        <td>Adobe</td>
+                        <td>00.000.000/0002-00</td>
+                        <td>(11) 1111-1111</td>
+                        <td>suporte@empresa.com</td>
+                        <td>Acrobat Pro</td>
+                    </tr>
+                    <tr>
+                        <td>Google Brasil</td>
+                        <td>00.000.000/0003-00</td>
+                        <td>(11) 2222-2222</td>
+                        <td>contato@empresa.com</td>
+                        <td>Ana Souza</td>
+                        <td>Google Workspace</td>
+                    </tr>
+                    <tr>
+                        <td>Autodesk</td>
+                        <td>00.000.000/0004-00</td>
+                        <td>(11) 3333-3333</td>
+                        <td>contato@empresa.com</td>
+                        <td>Carlos Lima</td>
+                        <td>AutoCAD</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="nota rodape">exibindo 4 registros de demonstração.</p>
+        </section>
+    </main>
+</body>
+</html>

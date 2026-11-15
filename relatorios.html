@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Relatórios | Soft Marques Control</title>
+        <link rel="stylesheet" href="principal.css">
+    </head>
+    <body>
+        <input type="checkbox" id="abrir-menu" class="menu-check">
+        <aside>
+            <div class="marca">
+                <span class="logo">SM</span>
+                <div class="textos">
+                    <strong class="nome">Soft Marques</strong>
+                    <small class="subnome">CONTROL</small>
+                </div>
+            </div>
+            <p class="titulo-menu">MENU PRINCIPAL</p>
+            <nav>
+                <ul>
+                    <li><a href="principal.html">Página Principal</a></li>
+                    <li><a href="software.html">Softwares</a></li>
+                    <li><a href="licencas.html">Licenças</a></li>
+                    <li><a href="equipamentos.html">Equipamentos</a></li>
+                    <li><a href="fornecedores.html">Fornecedores</a></li>
+                    <li><a href="compras.html">Compras e contratos</a></li>
+                    <li><a class="ativo" href="relatorios.html">Relatórios</a></li>
+                </ul>
+            </nav>
+            <p class="titulo-menu">ADMINISTRAÇÃO</p>
+            <nav>
+                <ul>
+                    <li><a href="usuarios.html">Usuários e permissões</a></li>
+                    <li><a href="historico.html">Histórico de atividades</a></li>
+                    <li><a href="configuracoes.html">Configurações</a></li>
+                </ul>
+            </nav>
+            <div class="ajuda">
+                <strong>Precisa de ajuda?</strong>
+                <p>Consulte orientações para organizar seus softwares.</p>
+            </div>
+        </aside>
+        <main>
+            <header class="topo">
+                <label for="abrir-menu" class="menu-botao">☰</label>
+                <input type="search" placeholder="Buscar relatórios..." aria-label="Buscar relatórios">
+                <div class="usuario">
+                    <span class="avatar">AM</span>
+                    <div><strong>Administrador</strong>
+                        <small>Gestor do sistema</small>
+                    </div>
+                </div> 
+            </header>
+            <section class="ola">
+                <h1>Relatórios</h1>
+                <a class="botao" href="novo_relatorio.html">+ Criar relatório</a>
+            </section>
+            <section class="cartoes tres">
+                <article class="cartao">
+                    <strong class="numero">42</strong>
+                    <small class="nota">Softwares no inventário</small>
+                </article>
+                <article class="cartao">
+                    <strong class="numero">R$</strong>
+                    <small class="nota">25 mil custo anual estimado</small>
+                </article>
+                <article class="cartao">
+                    <strong class="numero">76%</strong>
+                    <small class="nota">Licenças em utilização</small>
+                </article>
+            </section>
+            <section class="recentes painel">
+                <h2>Compras e contratos cadastrados</h2>
+                <div class="filtros">
+                    <a class="filtro ativo" href="#">Todos</a>
+                    <a class="filtro" href="#">Ativos</a>
+                    <a class="filtro" href="#">Arquivados</a>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>RELATÓRIO</th>
+                            <th>DESCRIÇÃO</th>
+                            <th>PERÍODO</th>
+                            <th>ATUALIZADO EM</th>
+                            <th>AÇÃO</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Inventário de softwares</td>
+                            <td>Lista de programas cadastrados</td>
+                            <td>Atual</td>
+                            <td>Hoje, 09:42</td>
+                            <td>Visualizar</td>
+                        </tr>
+                        <tr>
+                            <td>Situação das licenças</td>
+                            <td>Ativas, vencidas e a vencer</td>
+                            <td>Atual</td>
+                            <td>Hoje, 09:42</td>
+                            <td>Visualizar</td>
+                        </tr>
+                        <tr>
+                            <td>Custos por fornecedor</td>
+                            <td>Valores anuais por fornecedor</td>
+                            <td>2026</td>
+                            <td>Ontem, 16:18</td>
+                            <td>Visualizar</td>
+                        </tr>
+                        <tr>
+                            <td>Equipamentos</td>
+                            <td>Dispositivos e responsáveis</td>
+                            <td>Atual</td>
+                            <td>20 out. 2026</td>
+                            <td>Visualizar</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="nota rodape">exibindo 4 registros de demonstração.</p>
+            </section>
+        </main>
+    </body>

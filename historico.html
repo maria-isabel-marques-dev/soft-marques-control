@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Histórico de atividades | Soft Marques Control</title>
+    <link rel="stylesheet" href="principal.css">
+</head>
+<body>
+    <input type="checkbox" id="abrir-menu" class="menu-check">
+    <aside>
+       <div class="marca">
+        <span class="logo">SM</span>
+        <div class="textos">
+            <strong class="nome">Soft Marques</strong>
+            <small class="subnome">CONTROL</small>
+        </div>
+       </div>
+       <p class="titulo-menu">MENU PRINCIPAL</p>
+       <nav>
+            <ul>
+                <li><a href="principal.html">Visão geral</a></li>
+                <li><a href="software.html">Softwares</a></li>
+                <li><a href="licencas.html">Licenças</a></li>
+                <li><a href="equipamentos.html">Equipamentos</a></li>
+                <li><a href="fornecedores.html">Fornecedores</a></li>
+                <li><a href="compras.html">Compras e contratos</a></li>
+                <li><a href="relatorios.html">Relatórios</a></li>
+            </ul>
+       </nav>
+       <p class="titulo-menu">ADMINISTRAÇÃO</p>
+       <nav>
+            <ul>
+                <li><a href="usuarios.html">Usuários e permissões</a></li>
+                <li><a class="ativo" href="historico.html">Histórico de atividades</a></li>
+                <li><a href="configuracoes.html">Configurações</a></li>
+            </ul>
+       </nav>
+       <div class="ajuda">
+            <strong>Precisa de ajuda?</strong>
+            <p>Consulte orientações para organizar seus softwares.</p>
+       </div>
+    </aside>
+    <main>
+        <header class="topo">
+            <label for="abrir-menu" class="menu-botao">☰</label>
+            <input type="search" placeholder="Buscar histórico..." aria-label="Buscar histórico">
+            <div class="usuario">
+                <span class="avatar">AM</span>
+                <div><strong>Administrador</strong>
+                    <small>Gestor do sistema</small>
+                </div>
+            </div>
+        </header>
+        <section class="ola">
+            <h1>Histórico de atividades</h1>
+            <a class="botao" href="#">Exportar histórico</a>
+        </section>
+        <section class="cartoes tres">
+            <article class="cartao">
+                <strong class="numero">128</strong>
+                <small class="nota">Registros no histórico</small>
+            </article>
+            <article class="cartao">
+                <strong class="numero">12</strong>
+                <small class="nota">Atividades hoje</small>
+            </article>
+            <article class="cartao">
+                <strong class="numero">5</strong>
+                <small class="nota">Usuários ativos</small>
+            </article>
+        </section>
+        <section class="recentes painel">
+            <div class="extremos">
+             <h2>Histórico de atividades cadastradas</h2>
+                <div class="filtros">
+                  <a class="filtro ativo" href="#">Todos</a>
+                  <a class="filtro" href="#">Ativos</a>
+                  <a class="filtro" href="#">Arquivados</a>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>DATA E HORA</th>
+                        <th>USUÁRIO</th>
+                        <th>AÇÃO</th>
+                        <th>ITEM</th>
+                        <th>DETALHES</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>29 de out. 2026, 09:42</td>
+                        <td>Mariana Costa</td>
+                        <td>Cadastro</td>
+                        <td>Microsoft 365</td>
+                        <td>Software cadastrado</td>
+                    </tr>
+                    <tr>
+                        <td>29 de out. 2026, 08:20</td>
+                        <td>João Martins</td>
+                        <td>Edição</td>
+                        <td>PC-ADM-001</td>
+                        <td>Responsável atualizado</td>
+                    </tr>
+                    <tr>
+                        <td>28 de out. 2026, 16:15</td>
+                        <td>Ana Souza</td>
+                        <td>Atualização</td>
+                        <td>Licença Adobe</td>
+                        <td>Data de vencimento alterada</td>
+                    </tr>
+                    <tr>
+                        <td>28 out. 2026, 14:05 </td>
+                        <td>Mariana Costa</td>
+                        <td>Cadastro</td>
+                        <td>Fornecedor</td>
+                        <td>Novo fornecedor adicionado</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="nota rodape">exibindo 4 registros de demonstração.</p>
+        </section>
+    </main>
+</body>
+</html>

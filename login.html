@@ -1,0 +1,68 @@
+<!DOCTYPE html>  <!--tipo de documento-->
+<html lang="pt-br"> <!--linguagem do site-->
+    <head> <!--configurações da pagina-->
+        <meta charset="UTF-8"> <!--aceita os caracteres ex: ^, ç, ´-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!--adapta para todos os tamanhos da tela-->
+        <title>Login|Soft Marques Control</title> <!--titulo-->
+        <link rel="stylesheet" href="login.css"> <!--conecta ao css-->
+    </head>
+
+    <body> <!--onde fica o conteudo do site todo-->
+        <header> <!--o cabeçalho do site-->
+            <div class="marca"> <!--div separa meio que em grupo tudo que esta dentro dele-->
+                <span class="logo">SM</span> 
+                <h1>Soft Marques Control</h1>  <!--titulo da pagina (o nome fica maior, em destaque)-->
+            </div>
+                <a href="sistema.html" class="pagina-inicial"><!--abre um link-->
+                    ← Página inicial
+                </a>
+        </header>
+
+        <main> <!--conteudo principal-->  
+            <div class="cartao">
+                <span class="subtitulo">ACESSO AO SISTEMA</span> <!--span da destaque a uma parte pequena-->
+                <h2>Acesse sua conta</h2> <!--h2 é meio que um u=subtitulo-->
+                <p class="descricao">Entre com seus dados para continuar no Soft Marques Control.</p>
+                <form action="#" method="post" id="form-login" novalidate> <!--form abrre um formulario-->
+                    <div class="campo">
+                        <label for="email">E-mail ou usuário*</label> <!--label: o texto que nomeia o campo; o for liga ao id do input, e clicar no texto foca o campo -->
+                        <input  
+                            type="text"
+                            id="email"
+                            name="email"
+                            placeholder="Digite seu e-mail ou usuário"
+                            autocomplete="username"
+                            required
+                            > <!-- input cria o canto que o usuario digita. placeholder: mostra uma mensagem no canto que o usuario digita, required: torna o campo obrigatório; o formulário não é enviado se estiver vazio-->
+                         <span class="erro" id="erro-email"></span>     
+                    </div>
+                    <div class="campo">
+                        <label for="senha">Senha*</label>
+                        <input
+                            type="password"
+                            id="senha"
+                            name="senha"
+                            placeholder="Digite sua senha"
+                            autocomplete="current-password"
+                            required
+                        >
+                        <span class="erro" id="erro-senha"></span>
+                    </div>
+                    <a href="#" class="esqueceu-senha">
+                        Esqueceu sua senha ?
+                    </a>
+
+                    <button type="submit"> <!--botão-->
+                        Entrar no sistema
+                    </button>
+                </form>
+
+                <p class="cadastro">
+                    Ainda não tem uma conta ?
+                    <a href="cadastro.html">Criar conta</a>
+                </p>
+            </div>
+        </main>
+        <script src="login.js"></script>
+    </body>
+</html>

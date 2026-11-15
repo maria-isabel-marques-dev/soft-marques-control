@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Principal | Soft Marques Control</title>
+    <link rel="stylesheet" href="principal.css">
+</head>
+
+<body>
+    <input type="checkbox" id="abrir-menu" class="menu-check">
+    <aside>
+        <div class="marca">
+            <span class="logo">SM</span>
+            <div class="textos">
+                <strong class="nome">Soft Marques</strong>
+                <small class="subnome">CONTROL</small>
+            </div>
+        </div>
+        <p class="titulo-menu">MENU PRINCIPAL</p>
+        <nav>
+            <ul>
+                <li><a class="ativo" href="principal.html">Visão geral</a></li>
+                <li><a href="software.html">Softwares</a></li>
+                <li><a href="licencas.html">Licenças</a></li>
+                <li><a href="equipamentos.html">Equipamentos</a></li>
+                <li><a href="fornecedores.html">Fornecedores</a></li>
+                <li><a href="compras.html">Compras e contratos</a></li>
+                <li><a href="relatorios.html">Relatórios</a></li>
+            </ul>
+        </nav>
+        <p class="titulo-menu">ADMINISTRAÇÃO</p>
+        <nav>
+            <ul>
+                <li><a href="usuarios.html">Usuários e permissões</a></li>
+                <li><a href="historico.html">Histórico de atividades</a></li>
+                <li><a href="configuracoes.html">Configurações</a></li>
+            </ul>
+        </nav>
+        <div class="ajuda">
+            <strong>Precisa de ajuda?</strong>
+            <p>Consulte orientações para organizar seus softwares.
+            </p>
+        </div>
+    </aside>
+    <main>
+        <header class="topo">
+            <label for="abrir-menu" class="menu-botao">☰</label>
+            <input type="search" placeholder="Buscar software..." aria-label="Buscar software">
+            <div class="usuario">
+                <span class="avatar">AM</span>
+                <div><strong>Administrador</strong>
+                    <small>Gestor do sistema</small>
+                </div>
+            </div>
+        </header>
+        <!--conteudo da pagina-->
+        <section class="ola">
+            <h1>Olá, Administrador!</h1>
+            <a class="botao" href="#">+ Adicionar software</a>
+        </section>
+        <section class="cartoes">
+            <article class="cartao">
+                <span class="icone info">▣</span>
+                <span class="rotulo">SOFTWARES CADASTRADOS</span>
+                <strong class="numero">24</strong>
+                <small class="nota info">Total no inventário</small>
+            </article>
+            <article class="cartao">
+                <span class="icone ok">✓</span>
+                <span class="rotulo">LICENÇAS ATIVAS</span>
+                <strong class="numero">18</strong>
+                <small class="nota ok">Em situação regular</small>
+            </article>
+            <article class="cartao">
+                <span class="icone atencao">⚠</span>
+                <span class="rotulo">VENCEM EM 30 DIAS</span>
+                <strong class="numero">4</strong>
+                <small class="nota atencao">Precisam de atenção</small>
+            </article>
+            <article class="cartao">
+                <span class="icone perigo">!</span>
+                <span class="rotulo">LICENÇAS VENCIDAS</span>
+                <strong class="numero">2</strong>
+                <small class="nota perigo">Verifique a renovação</small>
+            </article>
+
+            <article class="cartao">
+                <span class="icone custo">R$</span>
+                <span class="rotulo">CUSTO ANUAL ESTIMADO</span>
+                <strong class="numero">R$ 18,4 mil</strong>
+                <small class="nota">No período anual</small>
+            </article>
+        </section>
+        <section class="paineis">
+            <article class="painel">
+                <div class="extremos">
+                  <h2>Status das licenças</h2>
+                </div>
+                <ul class="status">
+                    <li>
+                        <span class="ponto ok"></span>
+                        <span>Ativas</span>
+                        <div class="barra">
+                            <div class="preenchimento ok" style="width: 75%;"> </div>
+                        </div>
+                        <strong>18</strong>
+                    </li>
+                    <li>
+                        <span class="ponto atencao"></span>
+                        <span>Próximas do vencimento</span>
+                        <div class="barra">
+                            <div class="preenchimento atencao" style="width: 17%;"> </div>
+                        </div>
+                        <strong>4</strong>
+                    </li>
+                    <li>
+                        <span class="ponto perigo"></span>
+                        <span>Vencidas</span>
+                        <div class="barra">
+                            <div class="preenchimento perigo" style="width: 8%;"> </div>
+                        </div>
+                        <strong>2</strong>
+                    </li>
+                </ul>
+            </article>
+            <article class="painel">
+                <div class="extremos">
+                 <h2>Próximas renovações</h2>
+                 <a class="link" href="#">Ver todas</a>
+                </div>
+                <ul class="app">
+                    <li>
+                        <span class="letra">M</span>
+                        <div>
+                            <strong>Microsoft 365</strong>
+                            <small>Financeiro</small>
+                        </div>
+                        <time datetime="2026-11-02">02 nov. 2026</time>
+                        <span class="etiqueta em-breve">Em breve</span>
+                    </li>
+                    <li>
+                        <span class="letra">A</span>
+                        <div>
+                            <strong>Adobe Acrobat Pro</strong>
+                            <small>Administrativo</small>
+                        </div>
+                        <time datetime="2026-11-08">08 nov. 2026</time>
+                        <span class="etiqueta urgente">Urgente</span>
+                    </li>
+                    <li>
+                        <span class="letra">A</span>
+                        <div>
+                            <strong>Antivírus corporativo</strong>
+                            <small>TI</small>
+                        </div>
+                        <time datetime="2026-11-15">15 nov. 2026</time>
+                        <span class="etiqueta em-breve">Em breve</span>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="recentes painel">
+            <div class="extremos">
+                <h2>Softwares atualizados recentemente</h2>
+                <a class="link" href="#">Ver inventário completo →</a>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Software</th>
+                        <th>Versão</th>
+                        <th>Responsável</th>
+                        <th>Última atualização</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Microsoft 365</strong> <small>Produtividade</small></td>
+                        <td>16.0.7328</td>
+                        <td>Mariana Costa</td>
+                        <td>Hoje, 09:42</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Google Chrome</strong> <small>Navegador</small></td>
+                        <td>130.0.6723</td>
+                        <td>João Martins</td>
+                        <td>Ontem, 16:18</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Adobe Acrobat Pro</strong> <small>Documentos PDF</small></td>
+                        <td>2026.001.2</td>
+                        <td>Ana Souza</td>
+                        <td>20 out. 2026</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>

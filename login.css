@@ -1,0 +1,216 @@
+:root {
+    --vermelho: #c8102e;
+    --grafite: #1c1c1c;
+    --texto: #333333;
+    --fundo: #f4f4f4;
+    --branco: #ffffff;
+}
+* { 
+    box-sizing: border-box;
+}
+body {
+    font-family: Lato, arial, sans-serif;
+    background-color:var(--branco);
+    color: var(--texto);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+header {
+   background-color: var(--grafite);
+    color: var(--branco);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
+.marca {
+     display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.logo {
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    background-color: var(--vermelho);
+    border-radius: 6px;
+    font-weight: 700;
+}
+.marca h1 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: 600;
+}
+.pagina-inicial {
+    background-color: var(--vermelho);
+    color: var(--branco);
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: background-color 0.2s;
+    font-weight: bold;
+}
+.pagina-inicial:hover {
+    background-color: #a50d26;
+    color: var(--branco);
+}
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 56px 10%;
+    background-color: var(--fundo);
+}
+.cartao {
+    width: 100%;
+    max-width: 460px;
+    padding: 32px;
+    background-color: var(--branco);
+    border: 1px solid #e4e4e4;
+    border-radius: 12px;
+}
+.subtitulo {
+    display: inline-block;
+    padding: 6px 10px;
+    background-color: #fff0f2;
+    color: var(--vermelho);
+    font-weight: 700;
+    font-size: 11px;
+    margin-bottom: 18px;
+    border-radius: 4px;
+}
+.cartao h2 {
+    margin: 0 0 14px;
+    color: var(--grafite);
+    font-size: 30px;
+    line-height: 1.2;
+}
+.descricao {
+    margin: 0 0 28px;
+    font-size: 15px;
+    color: grey;
+    line-height: 1.5;
+}
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+.campo input {
+    width: 100%;
+    height: 46px;
+    padding: 0 12px;
+    border: 1px solid #e4e4e4;
+    border-radius: 6px;
+    background-color:var(--branco);
+    color: var(--texto);
+    font-family: Lato, arial,sans-serif;
+    font-size: 14px;
+    outline: none;
+}
+.campo input::placeholder {
+    color: #999999;
+}
+.campo input:focus {
+    border-color: var(--vermelho);
+    box-shadow: 0 0 0 2px #fff0f2;
+}
+.esqueceu-senha {
+    display: block;
+    margin: 0 0 22px;
+    text-align: right;
+    color: var(--vermelho);
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+} 
+.esqueceu-senha:hover {
+    text-decoration: underline;
+}
+.cartao button {
+    width: 100%;
+    padding: 14px 20px;
+    background-color: var(--vermelho);
+    color: var(--branco);
+    border: none;
+    border-radius: 6px;
+    font-family: Lato, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.cartao button:hover {
+    background-color: #a50d26;
+}
+.cadastro {
+    margin: 24px 0 0;
+    padding-top: 22px;
+    border-top: 1px solid #e4e4e4;
+    text-align: center;
+    color: grey;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.cadastro a {
+    color: var(--vermelho);
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 4px;
+}
+.cadastro a:hover {
+    color: var(--grafite);
+    text-decoration: underline;
+}
+footer {
+    padding: 20px 10%;
+    text-align: center;
+    background-color: var(--grafite);
+    color: #cccccc;
+}
+footer p {
+    margin: 4px 0;
+    font-size: 13px;
+}
+@media (max-width: 900px) {
+    main {
+        padding: 45px 5%;
+    }
+    .cartao {
+        max-width: 460px;
+    }
+}
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px 5%;
+    }
+    .marca h1 {
+        font-size: 21px;
+    }
+    .pagina-inicial {
+        padding: 10px 20px;
+    }
+    main {
+        padding: 32px 5%;
+        align-items: center;
+    }
+    .cartao {
+        padding: 25px 20px;
+    }
+    .cartao h2 {
+        font-size: 27px;
+    }
+    .campo input {
+        height: 46px;
+        font-size: 16px;
+    }
+}

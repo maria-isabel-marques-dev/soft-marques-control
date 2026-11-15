@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Usuários e permissões | Soft Marques Control</title>
+    <link rel="stylesheet" href="principal.css">
+</head>
+
+<body>
+    <input type="checkbox" id="abrir-menu" class="menu-check">
+    <aside>
+        <div class="marca">
+            <span class="logo">SM</span>
+            <div class="textos">
+                <strong class="nome">Soft Marques</strong>
+                <small class="subnome">CONTROL</small>
+            </div>
+        </div>
+        <p class="titulo-menu">MENU PRINCIPAL</p>
+        <nav>
+            <ul>
+                <li><a href="principal.html">Visão geral</a></li>
+                <li><a href="software.html">Softwares</a></li>
+                <li><a href="licencas.html">Licenças</a></li>
+                <li><a href="equipamentos.html">Equipamentos</a></li>
+                <li><a href="fornecedores.html">Fornecedores</a></li>
+                <li><a href="compras.html">Compras e contratos</a></li>
+                <li><a href="relatorios.html">Relatórios</a></li>
+            </ul>
+        </nav>
+        <p class="titulo-menu">ADMINISTRAÇÃO</p>
+        <nav>
+            <ul>
+                <li><a class="ativo" href="usuarios.html">Usuários e permissões</a></li>
+                <li><a href="historico.html">Histórico de atividades</a></li>
+                <li><a href="configuracoes.html">Configurações</a></li>
+            </ul>
+        </nav>
+        <div class="ajuda">
+            <strong>Precisa de ajuda?</strong>
+            <p>Consulte orientações para organizar seus softwares.</p>
+        </div>
+    </aside>
+    <main>
+        <header class="topo">
+            <label for="abrir-menu" class="menu-botao">☰</label>
+            <input type="search" placeholder="Buscar usuário..." aria-label="Buscar usuário">
+            <div class="usuario">
+                <span class="avatar">AM</span>
+                <div><strong>Administrador</strong>
+                    <small>Gestor do sistema</small>
+                </div>
+            </div>
+        </header>
+        <section class="ola">
+            <h1>Usuários e permissões</h1>
+            <a class="botao" href="#novo-usuario">+ Adicionar usuário</a>
+        </section>
+        <section class="cartoes tres">
+            <article class="cartao">
+                <strong class="numero">4</strong>
+                <small class="nota">Usuários cadastrados</small>
+            </article>
+            <article class="cartao">
+                <strong class="numero">2</strong>
+                <small class="nota">Administradores</small>
+            </article>
+            <article class="cartao">
+                <strong class="numero">3</strong>
+                <small class="nota">Operadores</small>
+            </article>
+        </section>
+        <section class="recentes painel">
+            <div class="extremos">
+                <h2>Usuários cadastrados</h2>
+                <div class="filtros">
+                    <a class="filtro ativo" href="#">Todos</a>
+                    <a class="filtro" href="#">Ativos</a>
+                    <a class="filtro" href="#">Inativos</a>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>USUÁRIO</th>
+                        <th>E-MAIL</th>
+                        <th>PERFIL</th>
+                        <th>ÚLTIMO ACESSO</th>
+                        <th>SITUAÇÃO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mariana Costa</td>
+                        <td>mariana@empresa.com</td>
+                        <td>Administrador</td>
+                        <td>Hoje, 09:42</td>
+                        <td><span class="etiqueta ok">Ativo</span></td>
+                        <td>
+                            <a class="acao" href="#editar-usuario">Editar</a>
+                            <a class="acao excluir" href="#excluir-usuario">Excluir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>João Martins</td>
+                        <td>joao@empresa.com</td>
+                        <td>Operador</td>
+                        <td>Hoje, 08:20</td>
+                        <td><span class="etiqueta ok">Ativo</span></td>
+                        <td>
+                            <a class="acao" href="#editar-usuario">Editar</a>
+                            <a class="acao excluir" href="#excluir-usuario">Excluir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ana Souza</td>
+                        <td>ana@empresa.com</td>
+                        <td>Operador</td>
+                        <td>Ontem, 16:15</td>
+                        <td><span class="etiqueta ok">Ativo</span></td>
+                        <td>
+                            <a class="acao" href="#editar-usuario">Editar</a>
+                            <a class="acao excluir" href="#excluir-usuario">Excluir</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Carlos Lima</td>
+                        <td>carlos@empresa.com</td>
+                        <td>Administrador</td>
+                        <td>20 de out. 2026</td>
+                        <td><span class="etiqueta ok">Ativo</span></td>
+                        <td>
+                            <a class="acao" href="#editar-usuario">Editar</a>
+                            <a class="acao excluir" href="#excluir-usuario">Excluir</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="nota rodape">exibindo 4 usuários.</p>
+        </section>
+        <div id="novo-usuario" class="janela">
+            <div class="janela-caixa">
+                <h2>Adicionar usuário</h2>
+                <form action="#sucesso">
+                    <div class="campo">
+                        <label for="nome">Nome completo</label>
+                        <input type="text" id="nome" required>
+                    </div>
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="campo">
+                        <label for="nome-usuario">Nome de usuário</label>
+                        <input type="text" id="nome-usuario" required>
+                    </div>
+                    <div class="campo">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" required>
+                    </div>
+                    <div class="campo">
+                        <label for="confirmar-senha">Confirmar senha</label>
+                        <input type="password" id="confirmar-senha" required>
+                    </div>
+                    <div class="campo">
+                        <label for="perfil">Perfil de acesso</label>
+                        <select id="perfil">
+                            <option>Operador</option>
+                            <option>Administrador</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label for="situacao">Situação</label>
+                        <select id="situacao">
+                            <option>Ativo</option>
+                            <option>Inativo</option>
+                        </select>
+                    </div>
+                    <div class="janela-botoes">
+                        <a class="link" href="#">Cancelar</a>
+                        <button class="botao" type="submit">Salvar usuário</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="sucesso" class="janela">
+            <div class="janela-caixa">
+                <h2>Usuário salvo com sucesso</h2>
+                <div class="janela-botoes">
+                    <a class="botao" href="#">OK</a>
+                </div>
+            </div>
+        </div>
+        <div id="editar-usuario" class="janela">
+            <div class="janela-caixa">
+                <h2>Editar usuário</h2>
+                <form action="#sucesso">
+                    <div class="campo">
+                        <label for="editar-nome">Nome completo</label>
+                        <input type="text" id="editar-nome" value="Mariana Costa" required>
+                    </div>
+                    <div class="campo">
+                        <label for="editar-email">E-mail</label>
+                        <input type="email" id="editar-email" value="mariana@empresa.com" required>
+                    </div>
+                    <div class="campo">
+                        <label for="editar-nome-usuario">Nome de usuário</label>
+                        <input type="text" id="editar-nome-usuario" value="MariCost" required>
+                    </div>
+                    <div class="campo">
+                        <label for="editar-senha">Senha</label>
+                        <input type="password" id="editar-senha">
+                    </div>
+                    <div class="campo">
+                        <label for="editar-confirmar-senha">Confirmar senha</label>
+                        <input type="password" id="editar-confirmar-senha">
+                    </div>
+                    <div class="campo">
+                        <label for="editar-perfil">Perfil de acesso</label>
+                        <select id="editar-perfil">
+                            <option>Operador</option>
+                            <option>Administrador</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label for="editar-situacao">Situação</label>
+                        <select id="editar-situacao">
+                            <option>Ativo</option>
+                            <option>Inativo</option>
+                        </select>
+                    </div>
+                    <div class="janela-botoes">
+                        <a class="link" href="#">Cancelar</a>
+                        <button class="botao" type="submit">Salvar alterações</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="excluir-usuario" class="janela">
+            <div class="janela-caixa">
+                <h2>Você realmente deseja excluir esse usuário ?</h2>
+                <div class="janela-botoes">
+                    <a class="link" href="#">Cancelar</a>
+                    <a class="botao" href="#excluido">Excluir usuário</a>
+                </div>
+            </div>
+        </div>
+        <div id="excluido" class="janela">
+            <div class="janela-caixa">
+                <h2>Usuário excluído com sucesso</h2>
+                <div class="janela-botoes">
+                    <a class="botao" href="#">OK</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>  <!--tipo de documento-->
+<html lang="pt-br"> <!--linguagem do site-->
+    <head> <!--configurações da pagina-->
+        <meta charset="UTF-8"> <!--aceita os caracteres ex: ^, ç, ´-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!--adapta para todos os tamanhos da tela-->
+        <title>Criar conta|Soft Marques Control</title> <!--titulo-->
+        <link rel="stylesheet" href="login.css"> <!--conecta ao css-->
+    </head>
+
+    <body> <!--onde fica o conteudo do site todo-->
+        <header> <!--o cabeçalho do site-->
+            <div class="marca"> <!--div separa meio que em grupo tudo que esta dentro dele-->
+                <span class="logo">SM</span> 
+                <h1>Soft Marques Control</h1>  <!--titulo da pagina (o nome fica maior, em destaque)-->
+            </div>
+                <a href="sistema.html" class="pagina-inicial"><!--abre um link-->
+                    ← Página inicial
+                </a>
+        </header>
+
+        <main> <!--conteudo principal-->  
+            <div class="cartao">
+                <span class="subtitulo">CRIAÇÃO DE CONTA</span> <!--span da destaque a uma parte pequena-->
+                <h2>Crie sua conta</h2> <!--h2 é meio que um u=subtitulo-->
+                <p class="descricao">Cadastre seus dados para começar a organizar seus softwares.</p>
+                <form action="#" method="post"> <!--form abrre um formulario-->
+                    <div class="campo">
+                        <label for="nome">Nome completo*</label> <!--label: o texto que nomeia o campo; o for liga ao id do input, e clicar no texto foca o campo -->
+                        <input       
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            placeholder="Digite seu nome completo"
+                            autocomplete="name"
+                            required
+                            > <!-- input cria o canto que o usuario digita. placeholder: mostra uma mensagem no canto que o usuario digita, required: torna o campo obrigatório; o formulário não é enviado se estiver vazio-->
+                    </div>
+                    <div class="campo">
+                        <label for="email">E-mail*</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Digite seu email"
+                            autocomplete="email"
+                            required
+                        >
+                    </div>
+                    <div class="campo">
+                        <label for="senha">Senha*</label>
+                        <input
+                            type="password"
+                            id="senha"
+                            name="senha"
+                            placeholder="Crie sua senha"
+                            autocomplete="new-password"
+                            required
+                        >
+                    </div>
+                    <div class="campo">
+                        <label for="Confirmar-senha">Confirmar senha*</label>
+                        <input
+                            type="password"
+                            id="confirmar-senha"
+                            name="confirmar-senha"
+                            placeholder="Confirme sua senha"
+                            autocomplete="new-password"
+                            required
+                        >
+                    </div>
+                    <button type="submit"> <!--botão-->
+                        Criar minha conta
+                    </button>
+                </form>
+
+                <p class="cadastro">
+                        já tem uma conta ?
+                    <a href="login.html">Fazer login</a>
+                </p>
+            </div>
+        </main>
+        <footer>  <!--rodapé-->
+            <p>
+                Soft Marques Control • Gestão de softwares e licenças
+            </p>
+        </footer> 
+    </body>
+</html>

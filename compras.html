@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Compras e contratos | Soft Marques Control</title>
+        <link rel="stylesheet" href="principal.css">
+    </head>
+    <body>
+        <input type="checkbox" id="abrir-menu" class="menu-check">
+        <aside>
+            <div class="marca">
+                <span class="logo">SM</span>
+                <div class="textos">
+                    <strong class="nome">Soft Marques</strong>
+                    <small class="subnome">CONTROL</small>
+                </div>
+            </div>
+            <p class="titulo-menu">MENU PRINCIPAL</p>
+            <nav>
+                <ul>
+                    <li><a href="principal.html">Página Principal</a></li>
+                    <li><a href="software.html">Softwares</a></li>
+                    <li><a href="licencas.html">Licenças</a></li>
+                    <li><a href="equipamentos.html">Equipamentos</a></li>
+                    <li><a href="fornecedores.html">Fornecedores</a></li>
+                    <li><a class="ativo" href="compras.html">Compras e contratos</a></li>
+                    <li><a href="relatorios.html">Relatórios</a></li>
+                </ul>
+            </nav>
+            <p class="titulo-menu">ADMINISTRAÇÃO</p>
+            <nav>
+                <ul>
+                    <li><a href="usuarios.html">Usuários e permissões</a></li>
+                    <li><a href="historico.html">Histórico de atividades</a></li>
+                    <li><a href="configuracoes.html">Configurações</a></li>
+                </ul>
+            </nav>
+            <div class="ajuda">
+                <strong>Precisa de ajuda?</strong>
+                <p>Consulte orientações para organizar seus softwares.</p>
+            </div>
+        </aside>
+        <main>
+            <header class="topo">
+                <label for="abrir-menu" class="menu-botao">☰</label>
+                <input type="search" placeholder="Buscar compras e contratos..." aria-label="Buscar compras e contratos">
+                <div class="usuario">
+                    <span class="avatar">AM</span>
+                    <div><strong>Administrador</strong>
+                        <small>Gestor do sistema</small>
+                    </div>
+                </div> 
+            </header>
+            <section class="ola">
+                <h1>Compras e contratos</h1>
+                <a class="botao" href="novo_relatorio.html">+ Criar relatório</a>
+            </section>
+            <section class="cartoes tres">
+                <article class="cartao">
+                    <strong class="numero">R$</strong>
+                    <small class="nota">25 mil Valor contratado</small>
+                </article>
+                <article class="cartao">
+                    <strong class="numero">6</strong>
+                    <small class="nota">Contratos vigentes</small>
+                </article>
+                <article class="cartao">
+                    <strong class="numero">2</strong>
+                    <small class="nota">Renovações Próximas</small>
+                </article>
+            </section>
+            <section class="recentes painel">
+                <div class="extremos">
+                <h2>Compras e contratos cadastrados</h2>
+                <div class="filtros">
+                    <a class="filtro ativo" href="#">Todos</a>
+                    <a class="filtro" href="#">Ativos</a>
+                    <a class="filtro" href="#">Arquivados</a>
+                </div>
+            </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>CONTRATO / SOFTWARE</th>
+                            <th>FORNECEDOR</th>
+                            <th>AQUISIÇÃO</th>
+                            <th>VIGÊNCIA ATÉ</th>
+                            <th>VALOR</th>
+                            <th>STATUS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Microsoft 365</td>
+                            <td>Microsoft</td>
+                            <td>02 nov. 2025</td>
+                            <td>02 nov. 2026</td>
+                            <td>R$ 8.400</td>
+                            <td>Vigente</td>
+                        </tr>
+                        <tr>
+                            <td>Adobe Acrobat Pro</td>
+                            <td>Adobe</td>
+                            <td>08 nov. 2025</td>
+                            <td>08 nov. 2026</td>
+                            <td>R$ 4.200</td>
+                            <td>A vencer</td>
+                        </tr>
+                        <tr>
+                            <td>Antivírus corporativo</td>
+                            <td>Fornecedor TI</td>
+                            <td>15 nov. 2025</td>
+                            <td>15 nov. 2026</td>
+                            <td>R$ 2.800</td>
+                            <td>Vigente</td>
+                        </tr>
+                        <tr>
+                            <td>AutoCAD</td>
+                            <td>Autodesk</td>
+                            <td>12 set. 2025</td>
+                            <td>12 set. 2026</td>
+                            <td>R$ 9.600</td>
+                            <td>Encerrado</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="nota rodape">exibindo 4 registros de demonstração.</p>
+            </section>
+        </main>
+    </body>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Configurações | Soft Marques Control</title>
+    <link rel="stylesheet" href="principal.css">
+</head>
+<body>
+    <input type="checkbox" id="abrir-menu" class="menu-check">
+    <aside>
+       <div class="marca">
+        <span class="logo">SM</span>
+        <div class="textos">
+            <strong class="nome">Soft Marques</strong>
+            <small class="subnome">CONTROL</small>
+        </div>
+       </div>
+       <p class="titulo-menu">MENU PRINCIPAL</p>
+       <nav>
+            <ul>
+                <li><a href="principal.html">Visão geral</a></li>
+                <li><a href="software.html">Softwares</a></li>
+                <li><a href="licencas.html">Licenças</a></li>
+                <li><a href="equipamentos.html">Equipamentos</a></li>
+                <li><a href="fornecedores.html">Fornecedores</a></li>
+                <li><a href="compras.html">Compras e contratos</a></li>
+                <li><a href="relatorios.html">Relatórios</a></li>
+            </ul>
+       </nav>
+       <p class="titulo-menu">ADMINISTRAÇÃO</p>
+       <nav>
+            <ul>
+                <li><a href="usuarios.html">Usuários e permissões</a></li>
+                <li><a href="historico.html">Histórico de atividades</a></li>
+                <li><a class="ativo" href="configuracoes.html">Configurações</a></li>
+            </ul>
+       </nav>
+       <div class="ajuda">
+            <strong>Precisa de ajuda?</strong>
+            <p>Consulte orientações para organizar seus softwares.</p>
+       </div>
+    </aside>
+    <main>
+        <header class="topo">
+            <label for="abrir-menu" class="menu-botao">☰</label>
+            <input type="search" placeholder="Buscar..." aria-label="Buscar">
+            <div class="usuario">
+                <span class="avatar">AM</span>
+                <div><strong>Administrador</strong>
+                    <small>Gestor do sistema</small>
+                </div>
+            </div>
+        </header>
+        <form>
+            <section class="ola">
+                <h1>Configurações</h1>
+                <button class="botao" type="submit">Salvar alterações</button>
+            </section>
+            <section class="paineis">
+                <article class="painel">
+                    <h2>Dados da empresa</h2>
+                    <div class="campo">
+                        <label for="empresa">Nome da empresa</label>
+                        <input type="text" id="empresa" value="Soft Marques">
+                    </div>
+                    <div class="campo">
+                        <label for="cnpj">CNPJ</label>
+                        <input type="text" id="cnpj" value="00.000.000/0001-00">
+                    </div>
+                    <div class="campo">
+                        <label for="e-mail">E-mail de contato</label>
+                        <input type="email" id="e-mail" value="softmarquescontrol@gmail.com">
+                    </div>
+                    <div class="campo">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" value="(85) 987611885">
+                    </div>
+                </article>
+                <article class="painel">
+                    <h2>Preferências do sistema</h2>
+                    <div class="campo">
+                        <label for="idioma">Idioma</label>
+                        <select id="idioma">
+                            <option>Português</option>
+                            <option>Inglês</option>
+                            <option>Espanhol</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label for="data">Formato da data</label>
+                        <select id="data">
+                            <option>DD/MM/YYYY</option>
+                            <option>MM/DD/YYYY</option>
+                            <option>YYYY/MM/DD</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label for="hora">Fuso horário</label>
+                        <select id="hora">
+                            <option>GMT-3 (Brasília)</option>
+                            <option>GMT-5 (Nova Iorque)</option>
+                            <option>GMT+0 (Londres)</option>
+                        </select>
+                    </div>
+                </article>
+                <article class="painel">
+                    <h2>Notificações</h2>
+                    <div class="campo">
+                        <label for="vencimento">avisos de vencimento</label>
+                        <select id="vencimento">
+                            <option>Ativado</option>
+                            <option>Desativado</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label for="resumo">Resumo de atividades</label>
+                        <select id="resumo">
+                            <option>Ativado</option>
+                            <option>Desativado</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label for="notificacao">Notificação por e-mail</label>
+                        <select id="notificacao">
+                            <option>Ativado</option>
+                            <option>Desativado</option>
+                        </select>
+                    </div>
+                </article>
+            </section>
+        </form>
