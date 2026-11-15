@@ -1,127 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Usuários e permissões | Soft Marques Control</title>
-    <link rel="stylesheet" href="principal.css">
+    <title>Soft Marques Control</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
+
 <body>
-    <input type="checkbox" id="abrir-menu" class="menu-check">
-    <aside>
-       <div class="marca">
-        <span class="logo">SM</span>
-        <div class="textos">
-            <strong class="nome">Soft Marques</strong>
-            <small class="subnome">CONTROL</small>
+    <header>
+        <div class="marca">
+            <span>SM</span>
+            <h1>Soft Marques Control</h1>
         </div>
-       </div>
-       <p class="titulo-menu">MENU PRINCIPAL</p>
-       <nav>
-            <ul>
-                <li><a href="principal.html">Visão geral</a></li>
-                <li><a class="ativo" href="software.html">Softwares</a></li>
-                <li><a href="licencas.html">Licenças</a></li>
-                <li><a href="equipamentos.html">Equipamentos</a></li>
-                <li><a href="fornecedores.html">Fornecedores</a></li>
-                <li><a href="compras.html">Compras e contratos</a></li>
-                <li><a href="relatorios.html">Relatórios</a></li>
-            </ul>
-       </nav>
-       <p class="titulo-menu">ADMINISTRAÇÃO</p>
-       <nav>
-            <ul>
-                <li><a href="usuarios.html">Usuários e permissões</a></li>
-                <li><a href="historico.html">Histórico de atividades</a></li>
-                <li><a href="configuracoes.html">Configurações</a></li>
-            </ul>
-       </nav>
-       <div class="ajuda">
-            <strong>Precisa de ajuda?</strong>
-            <p>Consulte orientações para organizar seus softwares.</p>
-       </div>
-    </aside>
+
+        <div class="acoes">
+            <p>Controle de softwares e licenças</p>
+            <a href="login.html">Entrar no sistema</a>
+        </div>
+
+    </header>
     <main>
-        <header class="topo">
-            <label for="abrir-menu" class="menu-botao">☰</label>
-            <input type="search" placeholder="Buscar software..." aria-label="Buscar software">
-            <div class="usuario">
-                <span class="avatar">AM</span>
-                <div><strong>Administrador</strong>
-                    <small>Gestor do sistema</small>
-                </div>
+        <section>
+            <div class="texto-hero">
+                <span>GESTÃO DE SOFTWARES</span>
+                <h2>Seus softwares sempre em dia</h2>
+                <p>Acompanhe softwares instalados, licenças, versões e renovações da sua empresa em um só lugar</p>
+                <a href="login.html">Entrar no sistema</a>
+                <p class="nota">Organização e visibilidade para a rotina da sua empresa</p>
             </div>
-        </header>
-        <section class="ola">
-            <h1>Usuários e permissões</h1>
-            <a class="botao" href="#">+ Adicionar usuário</a>
-        </section>
-        <section class="cartoes tres">
-            <article class="cartao">
-                <strong class="numero">5</strong>
-                <small class="nota">Usuários cadastrados</small>
-            </article>
-            <article class="cartao">
-                <strong class="numero">21</strong>
-                <small class="nota">Ativos</small>
-            </article>
-            <article class="cartao">
-                <strong class="numero">3</strong>
-                <small class="nota">Arquivados</small>
-            </article>
-        </section>
-        <section class="recentes painel">
-            <div class="extremos">
-             <h2>Softwares cadastrados</h2>
-                <div class="filtros">
-                  <a class="filtro ativo" href="#">Todos</a>
-                  <a class="filtro" href="#">Ativos</a>
-                  <a class="filtro" href="#">Arquivados</a>
-                </div>
+            <div class="caixa-hero">
+                <h3>Visão dos seus softwares</h3>
+                <ul>
+                    <li>
+                        <span>S</span>
+                        <strong>Softwares</strong>
+                        <p>Nome, fornecedor e versão</p>
+                    </li>
+                    <li>
+                        <span>L</span>
+                        <strong>Licenças</strong>
+                        <p>Quantidade e validade</p>
+                    </li>
+                    <li>
+                        <span>!</span>
+                        <strong>Alertas</strong>
+                        <p>Vencimentos e instalações</p>
+                    </li>
+                </ul>
             </div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>SOFTWARE</th>
-                        <th>CATEGORIA</th>
-                        <th>VERSÃO</th>
-                        <th>RESPONSÁVEL</th>
-                        <th>STATUS</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Microsoft 365</td>
-                        <td>Produtividade</td>
-                        <td>2026</td>
-                        <td>Mariana Costa</td>
-                        <td><span class="etiqueta ok">Ativo</span></td>
-                    </tr>
-                    <tr>
-                        <td>Google Chrome</td>
-                        <td>Navegador</td>
-                        <td>130.0.6723</td>
-                        <td>João Martins</td>
-                        <td><span class="etiqueta ok">Ativo</span></td>
-                    </tr>
-                    <tr>
-                        <td>Adobe Acrobat</td>
-                        <td>Documento PDF</td>
-                        <td>2026</td>
-                        <td>Ana Souza</td>
-                        <td><span class="etiqueta ok">Ativo</span></td>
-                    </tr>
-                    <tr>
-                        <td>AutoCAD</td>
-                        <td>Engenharia</td>
-                        <td>2025</td>
-                        <td>Carlos Lima</td>
-                        <td><span class="etiqueta ok">Ativo</span></td>
-                    </tr>
-                </tbody>
-            </table>
-            <p class="nota rodape">exibindo 4 registros de demonstração.</p>
+        </section>
+        <section>
+            <h2>Funcionalidades</h2>
+            <p>Os recursos essenciais para manter tudo organizado.</p>
+            <ul>
+                <li>
+                    <span>01</span>
+                    <h3>Softwares</h3>
+                    <p>Cadastro com nome, fornecedor e versão</p>
+                </li>
+                <li>
+                    <span>02</span>
+                    <h3>Licenças</h3>
+                    <p>Controle de quantidade, chave e validade</p>
+                </li>
+                <li>
+                    <span>03</span>
+                    <h3>Instalações</h3>
+                    <p>Vínculo do software com o usuário ou computador</p>
+                </li>
+                <li>
+                    <span>04</span>
+                    <h3>Alertas</h3>
+                    <p>Avisos de vencimento e instalações irregulares</p>
+                </li>
+                <li>
+                    <span>05</span>
+                    <h3>Relatórios</h3>
+                    <p>Licenças em uso, vencidas e custos</p>
+                </li>
+            </ul>
+
         </section>
     </main>
+
+
+    <footer>
+        <p><strong>Soft Marques Control</strong></p>
+        <p>© 2026 Soft Marques Control. Todos os direitos reservados. · Versão 1.0</p>
+        <p> Desenvolvido por Isabel Marques · Suporte: suporte@softmarques.com</p>
+    </footer>
 </body>
+
 </html>
